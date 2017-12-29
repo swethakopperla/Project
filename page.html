@@ -109,20 +109,20 @@ input[type=submit]:hover {
 <article>
 <h1 class="app">Make Appointment</h1>
 <h2>your appointment</h2>
-<form action="action.php" method="post">
+<form action="action.php" method="post" id="carform">
 <input type="text" name="name" placeholder="Your name...">
 <input type="text" name="email" placeholder="Your email..">
 <br>
 <input type="number" name="number" placeholder="Phone number..">
 <input id="date" type="date">
 <br>
-<select name="department">
+<select name="department" form="carform">
   <option value="A&E">A and E</option>
   <option value="Cardiology">Cardiology</option>
   <option value="General surgery">General surgery</option>
   <option value="Neurology" selected>Neurology</option>
 </select>
-<select name="dname">
+<select name="dname" form="carform">
   <option value="swetha">Dr.Swetha</option>
   <option value="uma">Dr.Uma</option>
   <option value="sneha latha">Dr.Sneha latha</option>
